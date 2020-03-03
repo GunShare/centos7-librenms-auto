@@ -49,6 +49,7 @@ echo [mariadb-5.5] >> /etc/my.cnf.d/server.cnf
 systemctl restart mariadb
 
 #設定Web Server
+echo      >> /etc/php.ini
 echo date.timezone = \"Asia/Taipei\" >> /etc/php.ini
 
 #設定apache
