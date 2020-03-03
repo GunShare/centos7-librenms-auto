@@ -1,0 +1,243 @@
+[root@localhost librenms]# vi config.php
+[root@localhost librenms]# ./validate.php
+====================================
+Component | Version
+--------- | -------
+LibreNMS  | 1.61-5-g12f8e72
+DB Schema | 2020_02_10_223323_create_alert_location_map_table (159)
+PHP       | 7.2.27
+MySQL     | 5.5.64-MariaDB
+RRDTool   | 1.4.8
+SNMP      | NET-SNMP 5.7.2
+====================================
+
+[OK]    Composer Version: 1.9.3
+[OK]    Dependencies up-to-date.
+[OK]    Database connection successful
+[OK]    Database schema correct
+[WARN]  You have not added any devices yet.
+        [FIX]:
+        You can add a device in the webui or with ./addhost.php
+[FAIL]  We have found some files that are owned by a different user than librenms, this will stop you updating automatically and / or rrd files being updated causing graphs to fail.
+        [FIX]:
+        sudo chown -R librenms:librenms /opt/librenms
+        sudo setfacl -d -m g::rwx /opt/librenms/rrd /opt/librenms/logs /opt/librenms/bootstrap/cache/ /opt/librenms/storage/
+        sudo chmod -R ug=rwX /opt/librenms/rrd /opt/librenms/logs /opt/librenms/bootstrap/cache/ /opt/librenms/storage/
+        Files:
+         /opt/librenms/config.php
+[root@localhost librenms]# sudo chown -R librenms:librenms /opt/librenms
+[root@localhost librenms]#         sudo setfacl -d -m g::rwx /opt/librenms/rrd /opt/librenms/logs /opt/librenms/bootstrap/cache/ /opt/librenms/storage/
+[root@localhost librenms]#         sudo chmod -R ug=rwX /opt/librenms/rrd /opt/librenms/logs /opt/librenms/bootstrap/cache/ /opt/librenms/storage/
+[root@localhost librenms]# ./validate.php
+====================================
+Component | Version
+--------- | -------
+LibreNMS  | 1.61-5-g12f8e72
+DB Schema | 2020_02_10_223323_create_alert_location_map_table (159)
+PHP       | 7.2.27
+MySQL     | 5.5.64-MariaDB
+RRDTool   | 1.4.8
+SNMP      | NET-SNMP 5.7.2
+====================================
+
+[OK]    Composer Version: 1.9.3
+[OK]    Dependencies up-to-date.
+[OK]    Database connection successful
+[OK]    Database schema correct
+[WARN]  You have not added any devices yet.
+        [FIX]:
+        You can add a device in the webui or with ./addhost.php
+[WARN]  Your local git contains modified files, this could prevent automatic updates.
+        [FIX]:
+        You can fix this with ./scripts/github-remove
+        Modified Files:
+         bootstrap/cache/.gitignore
+         logs/.gitignore
+         rrd/.gitignore
+         storage/app/.gitignore
+         storage/app/public/.gitignore
+         storage/debugbar/.gitignore
+         storage/framework/cache/.gitignore
+         storage/framework/cache/data/.gitignore
+         storage/framework/sessions/.gitignore
+         storage/framework/testing/.gitignore
+         storage/framework/views/.gitignore
+         storage/logs/.gitignore
+[root@localhost librenms]# ./scripts/github-remove -d
+Are you sure you want to delete all modified and untracked files? [y/N] y
+[root@localhost librenms]# ./validate.php
+====================================
+Component | Version
+--------- | -------
+LibreNMS  | 1.61-5-g12f8e72
+DB Schema | 2020_02_10_223323_create_alert_location_map_table (159)
+PHP       | 7.2.27
+MySQL     | 5.5.64-MariaDB
+RRDTool   | 1.4.8
+SNMP      | NET-SNMP 5.7.2
+====================================
+
+[OK]    Composer Version: 1.9.3
+[OK]    Dependencies up-to-date.
+[OK]    Database connection successful
+[OK]    Database schema correct
+[WARN]  You have not added any devices yet.
+        [FIX]:
+        You can add a device in the webui or with ./addhost.php
+[FAIL]  We have found some files that are owned by a different user than librenms, this will stop you updating automatically and / or rrd files being updated causing graphs to fail.
+        [FIX]:
+        sudo chown -R librenms:librenms /opt/librenms
+        sudo setfacl -d -m g::rwx /opt/librenms/rrd /opt/librenms/logs /opt/librenms/bootstrap/cache/ /opt/librenms/storage/
+        sudo chmod -R ug=rwX /opt/librenms/rrd /opt/librenms/logs /opt/librenms/bootstrap/cache/ /opt/librenms/storage/
+        Files:
+         /opt/librenms/.git/index
+         /opt/librenms/.git/ORIG_HEAD
+         /opt/librenms/logs/.gitignore
+         /opt/librenms/rrd/.gitignore
+         /opt/librenms/storage/app/public/.gitignore
+         /opt/librenms/storage/app/.gitignore
+         /opt/librenms/storage/framework/testing/.gitignore
+         /opt/librenms/storage/logs/.gitignore
+[root@localhost librenms]# sudo chown -R librenms:librenms /opt/librenms
+[root@localhost librenms]#         sudo setfacl -d -m g::rwx /opt/librenms/rrd /opt/librenms/logs /opt/librenms/bootstrap/cache/ /opt/librenms/storage/
+[root@localhost librenms]#         sudo chmod -R ug=rwX /opt/librenms/rrd /opt/librenms/logs /opt/librenms/bootstrap/cache/ /opt/librenms/storage/
+[root@localhost librenms]# ./validate.php
+====================================
+Component | Version
+--------- | -------
+LibreNMS  | 1.61-5-g12f8e72
+DB Schema | 2020_02_10_223323_create_alert_location_map_table (159)
+PHP       | 7.2.27
+MySQL     | 5.5.64-MariaDB
+RRDTool   | 1.4.8
+SNMP      | NET-SNMP 5.7.2
+====================================
+
+[OK]    Composer Version: 1.9.3
+[OK]    Dependencies up-to-date.
+[OK]    Database connection successful
+[OK]    Database schema correct
+[WARN]  You have not added any devices yet.
+        [FIX]:
+        You can add a device in the webui or with ./addhost.php
+[root@localhost librenms]# ./validate.php
+====================================
+Component | Version
+--------- | -------
+LibreNMS  | 1.61-5-g12f8e72
+DB Schema | 2020_02_10_223323_create_alert_location_map_table (159)
+PHP       | 7.2.27
+MySQL     | 5.5.64-MariaDB
+RRDTool   | 1.4.8
+SNMP      | NET-SNMP 5.7.2
+====================================
+
+[OK]    Composer Version: 1.9.3
+[OK]    Dependencies up-to-date.
+[OK]    Database connection successful
+[OK]    Database schema correct
+[WARN]  You have not added any devices yet.
+        [FIX]:
+        You can add a device in the webui or with ./addhost.php
+[FAIL]  We have found some files that are owned by a different user than librenms, this will stop you updating automatically and / or rrd files being updated causing graphs to fail.
+        [FIX]:
+        sudo chown -R librenms:librenms /opt/librenms
+        sudo setfacl -d -m g::rwx /opt/librenms/rrd /opt/librenms/logs /opt/librenms/bootstrap/cache/ /opt/librenms/storage/
+        sudo chmod -R ug=rwX /opt/librenms/rrd /opt/librenms/logs /opt/librenms/bootstrap/cache/ /opt/librenms/storage/
+        Files:
+         /opt/librenms/config.php
+[root@localhost librenms]# sudo chown -R librenms:librenms /opt/librenms
+[root@localhost librenms]#         sudo setfacl -d -m g::rwx /opt/librenms/rrd /opt/librenms/logs /opt/librenms/bootstrap/cache/ /opt/librenms/storage/
+[root@localhost librenms]#         sudo chmod -R ug=rwX /opt/librenms/rrd /opt/librenms/logs /opt/librenms/bootstrap/cache/ /opt/librenms/storage/
+[root@localhost librenms]# ./validate.php
+====================================
+Component | Version
+--------- | -------
+LibreNMS  | 1.61-5-g12f8e72
+DB Schema | 2020_02_10_223323_create_alert_location_map_table (159)
+PHP       | 7.2.27
+MySQL     | 5.5.64-MariaDB
+RRDTool   | 1.4.8
+SNMP      | NET-SNMP 5.7.2
+====================================
+
+[OK]    Composer Version: 1.9.3
+[OK]    Dependencies up-to-date.
+[OK]    Database connection successful
+[OK]    Database schema correct
+[WARN]  You have not added any devices yet.
+        [FIX]:
+        You can add a device in the webui or with ./addhost.php
+[WARN]  Your local git contains modified files, this could prevent automatic updates.
+        [FIX]:
+        You can fix this with ./scripts/github-remove
+        Modified Files:
+         bootstrap/cache/.gitignore
+         logs/.gitignore
+         rrd/.gitignore
+         storage/app/.gitignore
+         storage/app/public/.gitignore
+         storage/debugbar/.gitignore
+         storage/framework/cache/.gitignore
+         storage/framework/cache/data/.gitignore
+         storage/framework/sessions/.gitignore
+         storage/framework/testing/.gitignore
+         storage/framework/views/.gitignore
+         storage/logs/.gitignore
+[root@localhost librenms]# ./scripts/github-remove -d
+Are you sure you want to delete all modified and untracked files? [y/N] y
+[root@localhost librenms]# ./validate.php
+====================================
+Component | Version
+--------- | -------
+LibreNMS  | 1.61-5-g12f8e72
+DB Schema | 2020_02_10_223323_create_alert_location_map_table (159)
+PHP       | 7.2.27
+MySQL     | 5.5.64-MariaDB
+RRDTool   | 1.4.8
+SNMP      | NET-SNMP 5.7.2
+====================================
+
+[OK]    Composer Version: 1.9.3
+[OK]    Dependencies up-to-date.
+[OK]    Database connection successful
+[OK]    Database schema correct
+[WARN]  You have not added any devices yet.
+        [FIX]:
+        You can add a device in the webui or with ./addhost.php
+[FAIL]  We have found some files that are owned by a different user than librenms, this will stop you updating automatically and / or rrd files being updated causing graphs to fail.
+        [FIX]:
+        sudo chown -R librenms:librenms /opt/librenms
+        sudo setfacl -d -m g::rwx /opt/librenms/rrd /opt/librenms/logs /opt/librenms/bootstrap/cache/ /opt/librenms/storage/
+        sudo chmod -R ug=rwX /opt/librenms/rrd /opt/librenms/logs /opt/librenms/bootstrap/cache/ /opt/librenms/storage/
+        Files:
+         /opt/librenms/.git/index
+         /opt/librenms/.git/ORIG_HEAD
+         /opt/librenms/logs/.gitignore
+         /opt/librenms/rrd/.gitignore
+         /opt/librenms/storage/app/public/.gitignore
+         /opt/librenms/storage/app/.gitignore
+         /opt/librenms/storage/framework/testing/.gitignore
+         /opt/librenms/storage/logs/.gitignore
+[root@localhost librenms]# sudo chown -R librenms:librenms /opt/librenms
+[root@localhost librenms]#         sudo setfacl -d -m g::rwx /opt/librenms/rrd /opt/librenms/logs /opt/librenms/bootstrap/cache/ /opt/librenms/storage/
+[root@localhost librenms]#         sudo chmod -R ug=rwX /opt/librenms/rrd /opt/librenms/logs /opt/librenms/bootstrap/cache/ /opt/librenms/storage/
+[root@localhost librenms]# ./validate.php
+====================================
+Component | Version
+--------- | -------
+LibreNMS  | 1.61-5-g12f8e72
+DB Schema | 2020_02_10_223323_create_alert_location_map_table (159)
+PHP       | 7.2.27
+MySQL     | 5.5.64-MariaDB
+RRDTool   | 1.4.8
+SNMP      | NET-SNMP 5.7.2
+====================================
+
+[OK]    Composer Version: 1.9.3
+[OK]    Dependencies up-to-date.
+[OK]    Database connection successful
+[OK]    Database schema correct
+[WARN]  You have not added any devices yet.
+        [FIX]:
+        You can add a device in the webui or with ./addhost.php
