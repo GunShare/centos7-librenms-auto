@@ -17,7 +17,7 @@ echo baseurl=http://yum.mariadb.org/10.5/centos7-amd64 >> /etc/yum.repos.d/Maria
 echo gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB >> /etc/yum.repos.d/MariaDB.repo
 echo gpgcheck=1 >> /etc/yum.repos.d/MariaDB.repo
 
-yum install -y composer cronie fping git httpd ImageMagick jwhois mariadb mariadb-server mtr MySQL-python net-snmp net-snmp-utils nmap python-memcached rrdtool python3 python3-pip zip unzip gcc python3-devel
+yum install -y composer cronie fping git httpd ImageMagick jwhois mariadb mariadb-server mtr MySQL-python net-snmp net-snmp-utils nmap python-memcached rrdtool python3 python3-pip python3-PyMySQL zip unzip gcc python3-devel python3-redis
 
 echo [server] >> /etc/my.cnf.d/server.cnf
 echo [mysqld] >> /etc/my.cnf.d/server.cnf
@@ -31,8 +31,8 @@ echo [mariadb-5.5] >> /etc/my.cnf.d/server.cnf
 
 yum localinstall -y http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 yum install -y yum-utils yum-config-manager
-yum-config-manager --enable remi-php73
-yum-config-manager --disable remi-php54 remi-php55 remi-php56 remi-php70 remi-php71 remi-php72 remi-test
+yum-config-manager --enable remi-php74
+yum-config-manager --disable remi-php54 remi-php55 remi-php56 remi-php70 remi-php71 remi-php72 remi-php73 remi-test
 yum install -y cronie fping git ImageMagick jwhois mtr MySQL-python net-snmp net-snmp-utils nmap mod_php php-fpm php-cli php-common php-curl php-gd php-mbstring php-process php-snmp php-xml php-zip php-memcached php-mysqlnd python-memcached rrdtool
 
 
